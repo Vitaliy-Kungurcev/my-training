@@ -9,18 +9,6 @@ import java.util.stream.Stream;
 
 public class CollectionsTaskStream {
 
-    public static void main(String[] args) {
-        List<String> listString = new ArrayList<>(List.of("80", "80", "Privet", "hello", "vasia", "9034903840,6", "nemo 54", "54,7", "777", "0,12", "apple 15", "Grivet"));
-        List<Map<String, String>> listmap = new ArrayList<>(List.of(asMap("1", "Gamma", "2", "80", "4", "Privet", "5", "hello", "7", "9034903840,6", "8", "nemo 54", "3", "80", "9", "54,7", "10", "777", "11", "0,12", "12", "apple 15", "6", "vasia", "13", "Alpha")));
-//        System.out.println("54,7".toLowerCase().compareTo("0,12".toLowerCase()));
-//        listString = listString.stream().sorted(String.CASE_INSENSITIVE_ORDER).collect(Collectors.toList());
-        /* Проверьте что список строк отсортирован по алфавиту игнорируя регистр символов. */
-        System.out.println(getValuesAndSort(listmap));
-        System.out.println(getValuesAndSort2(listmap));
-
-
-    }
-
     /* Сгенерируйте список из целых чисел от 1 до Х включительно. */
     public static List<Integer> generateNumbers(int x) {
         return Stream.iterate(1, n -> n + 1)

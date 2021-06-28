@@ -5,14 +5,6 @@ import java.util.Arrays;
 @SuppressWarnings("unchecked")
 class DynamicArray<T> {
 
-    public static void main(String[] args) {
-        DynamicArray dynamicArray = new DynamicArray(1, 2, 3, 4, 5, 6, 7, 8, 9);
-//        List <Integer>list=new ArrayList<>(List.of(1,2,3,4,5,6,7,8));
-//        list.remove(4);
-//        System.out.println(list);
-//        System.out.println(dynamicArray.convertListTostring());
-    }
-
     private T[] array;
 
     public DynamicArray() {
